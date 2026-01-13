@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1>📊 Programación de Turnos (12h) y Análisis de Recargos — Excel + VBA (Colombia)</h1>
+  <h1>Programación de Turnos (12h) y Análisis de Recargos — Excel + VBA (Colombia)</h1>
 
   <p>
     Herramienta en <strong>Microsoft Excel + VBA</strong> para <strong>programación mensual de turnos de 12 horas</strong>,
@@ -22,7 +22,7 @@
 
 </div>
 
-<h2>🎯 Propósito del proyecto</h2>
+<h2>Propósito del proyecto</h2>
 <p>Resolver de forma integrada y auditable los siguientes problemas operativos en entornos <strong>24/7</strong>:</p>
 <ul>
   <li>Programar turnos de 12 horas de manera clara y consistente.</li>
@@ -34,7 +34,7 @@
   <li>Reducir reprocesos, errores manuales y tiempos de consolidación.</li>
 </ul>
 
-<h2>🧩 Contexto operativo: turnos y ventanas horarias</h2>
+<h2>Contexto operativo: turnos y ventanas horarias</h2>
 
 <h3>Turnos base (12 horas)</h3>
 <ul>
@@ -100,7 +100,7 @@
   deben validarse las ventanas y factores.
 </p>
 
-<h2>✅ Funcionalidad principal</h2>
+<h2>Funcionalidad principal</h2>
 
 <h3>✔ Programación de turnos</h3>
 <ul>
@@ -134,7 +134,7 @@
   <li><strong>KPI legal:</strong> trabajadores con más de 3 domingos trabajados en el mes (semáforo).</li>
 </ul>
 
-<h2>🔁 Actualización automática (sin botones)</h2>
+<h2>Actualización automática (sin botones)</h2>
 <ul>
   <li>Actualización automática mediante <code>Worksheet_Calculate</code>.</li>
   <li>Cada cambio en la programación recalcula: recargos, heatmap, tarjetas y KPI.</li>
@@ -143,7 +143,7 @@
 
 <h2>📘 Guía de interpretación</h2>
 
-<h3>📊 Interpretación del Heatmap</h3>
+<h3>Interpretación del Heatmap</h3>
 <p>
   El heatmap muestra una matriz donde:
 </p>
@@ -163,7 +163,7 @@
   <strong>Importante:</strong> el heatmap no mide carga laboral total. Mide <strong>concentración relativa de recargos por tipo</strong>.
 </p>
 
-<h3>📌 Tarjetas KPI (Resumen de Recargos)</h3>
+<h3>Tarjetas KPI (Resumen de Recargos)</h3>
 <p>Cada tarjeta muestra:</p>
 <pre><code>[Tipo de recargo]
 [Total horas] h | [Total eventos] evt</code></pre>
@@ -174,7 +174,7 @@
   <li><strong>Horas:</strong> eventos × factor (según la tabla de ventanas).</li>
 </ul>
 
-<h3>⚖ KPI legal: trabajo dominical reiterado</h3>
+<h3>KPI legal: trabajo dominical reiterado</h3>
 <p><strong>Indicador:</strong> <em>TRABAJADORES &gt; 3 DOMINGOS TRABAJADOS</em></p>
 <ul>
   <li>🟢 0 trabajadores → sin alerta</li>
@@ -185,13 +185,13 @@
   Este KPI es una <strong>alerta operativa</strong>. No sanciona ni interpreta jurídicamente; apoya revisión operativa y administrativa.
 </p>
 
-<h2>📄 Reportes ejecutivos en PDF (RRHH)</h2>
+<h2>Reportes ejecutivos en PDF (RRHH)</h2>
 <p>
   El libro incluye macros para generar reportes ejecutivos en PDF destinados a Recursos Humanos, a partir de:
   <strong>una hoja principal (Programacion)</strong> y <strong>una hoja por trabajador</strong> con su formato imprimible.
 </p>
 
-<h3>🖨 Flujo de exportación a PDF</h3>
+<h3>Flujo de exportación a PDF</h3>
 <ol>
   <li>Crear una carpeta local en <code>C:\Users\Public\Documents\</code>.</li>
   <li>Nombre de la carpeta basado en: <code>A1</code> + <code>AA1</code> + <code>AD1</code>.</li>
@@ -200,16 +200,16 @@
   <li>Notificar finalización y abrir carpeta destino.</li>
 </ol>
 
-<h2>✉️ Preparación de archivo para envío al personal (gobierno de la información)</h2>
+<h2>Preparación de archivo para envío al personal (gobierno de la información)</h2>
 <p>
   El proyecto incluye un botón <strong>“Preparar archivo para envío”</strong> para distribuir la programación a los trabajadores
   <strong>sin exponer cálculos de nómina, heatmaps, KPIs ni reportes individuales</strong>.
 </p>
 
-<h3>🔐 Principio aplicado</h3>
+<h3>Principio aplicado</h3>
 <p><strong>La información sensible no se protege, se excluye del archivo distribuido.</strong></p>
 
-<h3>🧾 Flujo del botón “Preparar archivo para envío”</h3>
+<h3>Flujo del botón “Preparar archivo para envío”</h3>
 <ol>
   <li>Crear una <strong>copia</strong> del libro.</li>
   <li>En la copia:
@@ -235,7 +235,7 @@
   <li>Abrir carpeta destino para ver/adjuntar manualmente si es necesario.</li>
 </ol>
 
-<h3>⚠️ Manejo de Error 429 (Outlook no disponible)</h3>
+<h3>Manejo de Error 429 (Outlook no disponible)</h3>
 <ul>
   <li>Si Outlook está disponible: se crea el correo con adjunto.</li>
   <li>Si Outlook no está instalado, no configurado o está bloqueado por políticas:
@@ -247,7 +247,7 @@
   </li>
 </ul>
 
-<h2>⚖ Marco legal (Colombia)</h2>
+<h2>Marco legal (Colombia)</h2>
 <ul>
   <li>Alineado con legislación laboral colombiana vigente al <strong>13-ene-2026</strong>.</li>
   <li>No liquida salarios ni reemplaza sistemas oficiales.</li>
